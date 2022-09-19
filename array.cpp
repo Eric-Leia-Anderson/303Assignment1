@@ -67,7 +67,7 @@ Array::Array() {
 	 num = 10;
 	 count = 0;
 }
-
+/*loops through array and prints out each element.*/
 void Array::print() {
 
 	for (int i = 0; i < count; i++) {
@@ -76,7 +76,7 @@ void Array::print() {
 	}
 	cout << "\n";
 }
-
+/*deletes array so there are no dangling pointers.*/
 Array::~Array() {
 	delete[] array;
 }
